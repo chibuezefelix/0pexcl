@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — opxl limited</title>
+  <meta name="description" content="Privacy Policy for OPXL Limited — global policy covering NDPA, GDPR, UK GDPR, CCPA/CPRA, LGPD, POPIA, PIPEDA, and other applicable data protection laws." />
+
+  <link rel="icon" type="image/png" href="opxl-logo.png" />
+  <link rel="apple-touch-icon" href="opxl-logo.png" />
+  <link rel="shortcut icon" type="image/png" href="opxl-logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #0a0a0a; --paper: #fafafa; --mute: #6b6b6b; --soft: #4a4a4a;
+      --hair: #e6e6e6; --font-display: "Geist", -apple-system, sans-serif;
+      --font-mono: "Geist Mono", ui-monospace, monospace;
+      --max-w: 1280px; --read-w: 720px;
+    }
+    html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; scroll-behavior: smooth; }
+    body { font-family: var(--font-display); background: var(--paper); color: var(--ink); min-height: 100vh; display: flex; flex-direction: column; font-weight: 400; letter-spacing: -0.005em; }
+    a { color: inherit; text-decoration: none; }
+
+    header.site { width: 100%; padding: 22px 48px; border-bottom: 1px solid var(--hair); }
+    .header-inner { max-width: var(--max-w); margin: 0 auto; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 32px; }
+    .brand { display: flex; align-items: center; flex-shrink: 0; justify-self: start; }
+    .brand img { height: 38px; width: auto; display: block; }
+    nav.top { display: flex; align-items: center; gap: 36px; flex-wrap: wrap; justify-self: center; justify-content: center; }
+    nav.top a { font-family: var(--font-mono); font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink); position: relative; padding: 4px 0; transition: opacity 0.2s ease; }
+    nav.top a:hover { opacity: 0.55; }
+    nav.top a.active { opacity: 1; }
+    nav.top a.active::before { content: ""; position: absolute; left: 0; right: 0; bottom: -2px; height: 1px; background: var(--ink); }
+
+    main { flex: 1; width: 100%; padding: 80px 48px 120px; }
+    .legal { max-width: var(--read-w); margin: 0 auto; }
+    .legal .eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--mute); margin-bottom: 24px; }
+    .legal h1 { font-size: clamp(36px, 5vw, 56px); font-weight: 400; line-height: 1.05; letter-spacing: -0.025em; margin-bottom: 18px; }
+    .legal .meta { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.04em; color: var(--mute); padding-bottom: 32px; margin-bottom: 48px; border-bottom: 1px solid var(--hair); }
+    .legal .intro { font-size: 17px; line-height: 1.65; color: var(--soft); margin-bottom: 28px; }
+    .legal .callout { font-family: var(--font-mono); font-size: 12px; line-height: 1.7; letter-spacing: 0.02em; background: #f0f0f0; border-left: 2px solid var(--ink); padding: 20px 22px; margin: 36px 0; color: var(--ink); }
+    .legal h2 { font-size: 22px; font-weight: 500; letter-spacing: -0.015em; margin-top: 56px; margin-bottom: 18px; scroll-margin-top: 100px; }
+    .legal h2 .num { font-family: var(--font-mono); font-size: 12px; font-weight: 500; letter-spacing: 0.1em; color: var(--mute); margin-right: 12px; vertical-align: middle; }
+    .legal h3 { font-size: 15px; font-weight: 500; margin-top: 28px; margin-bottom: 10px; }
+    .legal p { font-size: 15px; line-height: 1.7; color: var(--soft); margin-bottom: 16px; }
+    .legal p strong { color: var(--ink); font-weight: 500; }
+    .legal ol, .legal ul { margin: 12px 0 20px 0; padding-left: 22px; }
+    .legal ol li, .legal ul li { font-size: 15px; line-height: 1.7; color: var(--soft); margin-bottom: 8px; padding-left: 6px; }
+    .legal .contact { font-family: var(--font-mono); font-size: 13px; line-height: 1.8; letter-spacing: 0.02em; background: var(--paper); border: 1px solid var(--hair); padding: 24px 26px; margin: 24px 0; }
+    .legal .contact strong { display: block; color: var(--ink); margin-bottom: 8px; font-weight: 500; text-transform: uppercase; font-size: 11px; letter-spacing: 0.16em; }
+    .legal a.inline { text-decoration: underline; text-underline-offset: 3px; }
+
+    .legal .tag {
+      display: inline-block; font-family: var(--font-mono); font-size: 10px; font-weight: 500;
+      letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink);
+      background: #ececec; padding: 4px 10px; border-radius: 2px; margin-right: 8px; margin-bottom: 8px;
+    }
+
+    .jurisdiction-block {
+      border: 1px solid var(--hair); padding: 22px 24px; margin: 20px 0; border-radius: 2px;
+    }
+    .jurisdiction-block h3 { margin-top: 0; font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; }
+
+    footer.site { width: 100%; padding: 48px 48px 56px; border-top: 1px solid var(--hair); }
+    .footer-inner { max-width: var(--max-w); margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
+    .footer-inner .copy, .footer-inner .links { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--mute); }
+    .footer-inner .links { display: flex; gap: 28px; flex-wrap: wrap; }
+    .footer-inner .links a { color: var(--ink); transition: opacity 0.2s; }
+    .footer-inner .links a:hover { opacity: 0.55; }
+
+    @media (max-width: 860px) {
+      header.site { padding: 18px 20px; } main { padding: 56px 20px 80px; } footer.site { padding: 36px 20px 40px; }
+      .header-inner { grid-template-columns: 1fr; gap: 18px; }
+      .brand { justify-self: center; } .brand img { height: 32px; }
+      nav.top { gap: 14px 22px; justify-content: center; }
+      nav.top a { font-size: 10px; letter-spacing: 0.12em; }
+      .legal h1 { font-size: 32px; } .legal h2 { font-size: 19px; margin-top: 44px; }
+      .legal p, .legal li { font-size: 14.5px; }
+      .footer-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
+    }
+    ::selection { background: var(--ink); color: var(--paper); }
+  </style>
+</head>
+<body>
+
+  <header class="site">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="opxl home"><img src="opxl-logo.png" alt="opxl" /></a>
+      <nav class="top" aria-label="primary">
+        <a href="index.html#news">News</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#solutions">Solutions</a>
+        <a href="index.html#fintech">Fintech</a>
+        <a href="index.html#enterprise">Enterprise</a>
+        <a href="index.html#ai">AI</a>
+        <a href="index.html#careers">Careers</a>
+        <a href="legal.html">Legal</a>
+        <a href="privacy.html" class="active">Privacy</a>
+      </nav>
+      <div class="header-spacer" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <main>
+    <article class="legal">
+
+      <p class="eyebrow">OPXL Limited &nbsp;·&nbsp; Global Privacy Policy</p>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective as of 22 May 2026 &nbsp;·&nbsp; Last updated 22 May 2026</p>
+
+      <p class="intro">OPXL Limited and its affiliates (<strong>"OPXL,"</strong> <strong>"we,"</strong> <strong>"us,"</strong> or <strong>"our"</strong>) build enterprise software, fintech infrastructure, mobile applications, cloud services, and artificial intelligence solutions used by individuals and businesses worldwide. This Privacy Policy explains how we collect, use, disclose, transfer, store, retain, and otherwise process Personal Information across all the jurisdictions in which our Services are made available.</p>
+
+      <p>This Policy applies globally and is supplemented by jurisdiction-specific provisions where local law grants you additional rights — including the <strong>Nigeria Data Protection Act 2023 (NDPA)</strong>, the <strong>EU General Data Protection Regulation (GDPR)</strong>, the <strong>UK GDPR</strong> and Data Protection Act 2018, the <strong>California Consumer Privacy Act / California Privacy Rights Act (CCPA/CPRA)</strong>, the <strong>Brazilian Lei Geral de Proteção de Dados (LGPD)</strong>, the <strong>South African Protection of Personal Information Act (POPIA)</strong>, the <strong>Canadian Personal Information Protection and Electronic Documents Act (PIPEDA)</strong>, the <strong>Australian Privacy Act 1988</strong>, and other applicable data protection laws.</p>
+
+      <p>By accessing, browsing, or using our website, applications, or Services, you confirm that you have read, understood, and agree to the terms of this Privacy Policy.</p>
+
+      <p>In this Policy, <strong>"Personal Information"</strong> (also referred to as "personal data" in some jurisdictions) means any information that identifies or makes identifiable a natural person. This includes the meaning given to "personal data" under Article 4(1) of the GDPR and UK GDPR, "personal information" under the CCPA/CPRA, "personal data" under the NDPA, "dados pessoais" under the LGPD, and equivalent definitions under other applicable laws.</p>
+
+      <p>OPXL Limited is the <strong>data controller</strong> in respect of Personal Information we collect about our customers, website visitors, and end-users of our consumer products. Where we process Personal Information on behalf of business customers (for example, in connection with payment processing or enterprise software services), OPXL acts as a <strong>data processor</strong>, and the business customer is the data controller.</p>
+
+      <h2 id="s1"><span class="num">01</span>What Information Do We Collect?</h2>
+
+      <h3>Information You Provide to Us</h3>
+      <p>We collect information you provide when you apply for or sign up for our Services, complete identity verification (KYC) checks, authenticate into your account, communicate with us for support, or otherwise use our Services. This may include:</p>
+      <ul>
+        <li><strong>Identification Information.</strong> Your name; email address; mailing address; phone number; date of birth; government-issued identification numbers (such as a National Identification Number, Bank Verification Number, Tax Identification Number, Social Security Number, passport number, or national ID number, depending on your country); biometric identifiers where applicable; signature; and authentication credentials.</li>
+        <li><strong>Financial Information.</strong> Bank account details, card numbers, wallet identifiers, transaction history, and information regarding your creditworthiness obtained from licensed credit bureaux and business partners.</li>
+        <li><strong>Transaction Information.</strong> When you use our Services to make, accept, request, or record payments or transactions: when and where the transactions occur, names of transacting parties, transaction descriptions, amounts, billing and shipping information, and devices and payment methods used.</li>
+        <li><strong>Business Information.</strong> If you are a business customer: business registration details (such as your CAC certificate, certificate of incorporation, articles of association, or local equivalent), business address, names and identification of directors and beneficial owners, and other corporate information required by applicable law.</li>
+        <li><strong>Sensitive Information.</strong> Where you provide it and we are lawfully permitted to process it, we may collect special categories of Personal Information such as government identifiers, biometric data, or — only where strictly necessary for a specific Service — health information.</li>
+        <li><strong>Other Information You Provide.</strong> Survey responses, feedback, referrals, participation in promotions, and any other voluntary submissions.</li>
+      </ul>
+
+      <h3>Information We Automatically Collect</h3>
+      <ul>
+        <li><strong>Device Information.</strong> Hardware model, operating system and version, device identifiers, mobile network information, language, time zone, and information about your device's interaction with our Services.</li>
+        <li><strong>Use Information.</strong> Log data including IP address, browser type, country and language settings, pages or features visited or used, content viewed, search queries, referring/exit pages, date and time stamps, and clickstream data.</li>
+        <li><strong>Location Information.</strong> Approximate location derived from your IP address. With your consent, we may collect more precise location data from your device.</li>
+        <li><strong>Cookies and Similar Technologies.</strong> See Section 10 below.</li>
+      </ul>
+
+      <h3>Information We Collect from Other Sources</h3>
+      <ul>
+        <li><strong>Identity Verification Providers.</strong> Information from third-party identity verification services, credit bureaux, financial institutions, national identity databases (where lawful), and publicly available sources.</li>
+        <li><strong>Compliance and Fraud Sources.</strong> Information used for sanctions screening, anti-money laundering (AML) checks, fraud detection, and adverse media screening.</li>
+        <li><strong>Partners and Integrations.</strong> Information from third parties you have authorised to share data with us (for example, when you connect a bank account or sign in via a third-party identity provider).</li>
+      </ul>
+
+      <h2 id="s2"><span class="num">02</span>How We Use Your Information</h2>
+
+      <h3>Providing, Improving, and Developing our Services</h3>
+      <ul>
+        <li>processing or recording payments and transactions;</li>
+        <li>displaying your historical transaction or account data;</li>
+        <li>providing, maintaining, and improving our Services;</li>
+        <li>developing new products, services, and features;</li>
+        <li>delivering technical notices, security alerts, and support and administrative messages;</li>
+        <li>personalising your experience and making the Services more useful to you;</li>
+        <li>training and improving our artificial intelligence and machine learning models in compliance with applicable law, where we have a lawful basis to do so;</li>
+        <li>measuring, tracking, and analysing trends and usage.</li>
+      </ul>
+
+      <h3>Communicating with You</h3>
+      <ul>
+        <li>responding to your enquiries and providing customer support;</li>
+        <li>sending you information about Services you have requested or that we think you may find useful;</li>
+        <li>conducting surveys and collecting feedback.</li>
+      </ul>
+
+      <h3>Protecting our Services and Maintaining Trust</h3>
+      <ul>
+        <li>investigating, detecting, preventing, or reporting fraud, security incidents, or other prohibited or illegal activities;</li>
+        <li>protecting our, our customers', or other users' rights, property, security, and integrity;</li>
+        <li>enforcing our Terms of Use and other agreements;</li>
+        <li>verifying your identity and (where applicable) determining your creditworthiness;</li>
+        <li>complying with applicable laws — including anti-money laundering, counter-terrorism financing, sanctions, tax, accounting, financial-services regulation, and data-protection laws — and responding to lawful requests from courts, regulators, and law enforcement.</li>
+      </ul>
+
+      <h3>Advertising and Marketing</h3>
+      <ul>
+        <li>marketing our Services to you;</li>
+        <li>communicating about opportunities, products, services, contests, promotions, discounts, incentives, surveys, and rewards offered by us and selected partners, subject to your applicable consent and your right to opt out at any time.</li>
+      </ul>
+
+      <h2 id="s3"><span class="num">03</span>Lawful Bases for Processing</h2>
+      <p>Where required by applicable law (including the GDPR, UK GDPR, NDPA, LGPD, and POPIA), we process your Personal Information only where we have a lawful basis to do so. We rely on one or more of the following bases:</p>
+      <ul>
+        <li><strong>Consent</strong> — where you have given specific, informed, and unambiguous consent for a particular purpose. You may withdraw consent at any time.</li>
+        <li><strong>Performance of a contract</strong> — where processing is necessary to perform a contract with you or to take steps at your request before entering into one.</li>
+        <li><strong>Legal obligation</strong> — where processing is necessary to comply with a legal obligation to which we are subject (for example, KYC, AML, sanctions, tax reporting).</li>
+        <li><strong>Vital interests</strong> — where processing is necessary to protect your vital interests or those of another natural person.</li>
+        <li><strong>Public interest</strong> — where processing is necessary for the performance of a task carried out in the public interest.</li>
+        <li><strong>Legitimate interests</strong> — where processing is necessary for our or a third party's legitimate interests, except where such interests are overridden by your interests, rights, or freedoms. Our legitimate interests typically include providing and improving our Services, securing our systems, preventing fraud, and promoting our business.</li>
+      </ul>
+
+      <h2 id="s4"><span class="num">04</span>How We Share Your Information</h2>
+
+      <h3>With Other Users with Whom You Interact</h3>
+      <p>Where an element of our Services involves interaction with other users (for example, sending or receiving a payment), the information necessary to facilitate that interaction is shared with the other user.</p>
+
+      <h3>Among Our Affiliates</h3>
+      <p>Within our group of companies, for any purpose consistent with this Policy, subject to applicable law.</p>
+
+      <h3>With Third-Party Service Providers</h3>
+      <p>Cloud hosting providers (such as AWS, Google Cloud, Microsoft Azure), payment processors, identity verification and KYC providers, fraud-detection services, customer-support platforms, analytics providers, marketing and communications platforms, and other vendors that perform services on our behalf. These providers are contractually required to process Personal Information only on our instructions and to maintain appropriate confidentiality and security measures.</p>
+
+      <h3>With Financial Partners and Regulators</h3>
+      <p>Banks, payment networks, card schemes (Visa, Mastercard, Verve, etc.), licensed financial institutions, credit reference agencies, and regulators where required for the provision of financial services or for compliance with law.</p>
+
+      <h3>Business Transfers and Corporate Changes</h3>
+      <p>In connection with a merger, acquisition, restructuring, financing, sale of assets, or other corporate transaction. Your Personal Information may be transferred to a successor or buyer, subject to applicable data-protection law.</p>
+
+      <h3>Safety and Compliance with Law</h3>
+      <p>Where we believe disclosure is reasonably necessary to: (i) comply with law, regulation, legal process, or governmental request, including from courts and competent regulators in any jurisdiction in which we operate; (ii) enforce our Terms of Use or other agreements; (iii) protect our, our customers', or other users' rights, property, security, or integrity; or (iv) prevent fraud, abuse, or harm.</p>
+
+      <h3>With Your Consent</h3>
+      <p>We share Personal Information with third parties where you have directed us to do so or otherwise consented to the sharing.</p>
+
+      <h3>Aggregated and De-Identified Information</h3>
+      <p>We may share aggregated or de-identified information that does not reasonably identify you.</p>
+
+      <div class="callout"><strong>SMS &amp; mobile messaging data.</strong> Mobile phone numbers collected for one-time passwords, transaction confirmations, or authentication will not be shared with third parties or affiliates for marketing or promotional purposes. SMS originator opt-in data and consent will not be shared with any third party.</div>
+
+      <h2 id="s5"><span class="num">05</span>International Data Transfers</h2>
+      <p>Because OPXL operates globally and uses service providers based in multiple countries, your Personal Information may be transferred to, stored in, or accessed from countries other than the one in which you reside. The data-protection laws of those countries may differ from the laws of your country.</p>
+
+      <p>Where we transfer Personal Information across borders, we implement appropriate safeguards as required by applicable law, including one or more of the following mechanisms:</p>
+      <ul>
+        <li><strong>Adequacy decisions</strong> — transfers to countries that the relevant authority (such as the European Commission, the UK ICO, or the Nigeria Data Protection Commission) has determined to provide an adequate level of protection;</li>
+        <li><strong>Standard Contractual Clauses (SCCs)</strong> — including the EU SCCs (Commission Decision 2021/914), the UK International Data Transfer Agreement (IDTA) or Addendum, and equivalent contractual mechanisms approved by other regulators;</li>
+        <li><strong>Binding Corporate Rules</strong> where applicable;</li>
+        <li><strong>Your explicit consent</strong> to the transfer after being informed of the possible risks;</li>
+        <li><strong>Necessity for the performance of a contract</strong> between you and us.</li>
+      </ul>
+
+      <p>For EU/UK/Swiss data subjects, we additionally rely on the <strong>EU-U.S. Data Privacy Framework</strong>, <strong>UK Extension to the EU-U.S. Data Privacy Framework</strong>, and <strong>Swiss-U.S. Data Privacy Framework</strong> where Personal Information is transferred to certified entities in the United States. Copies of our standard transfer documents are available on request.</p>
+
+      <h2 id="s6"><span class="num">06</span>Your Privacy Rights (Global Baseline)</h2>
+      <p>Subject to applicable law, you have the following rights in relation to your Personal Information. Some rights apply only in certain jurisdictions, while others are recognised as a global baseline.</p>
+      <ul>
+        <li><strong>The right to be informed</strong> about the collection and use of your Personal Information.</li>
+        <li><strong>The right of access</strong> to the Personal Information we hold about you.</li>
+        <li><strong>The right to rectification</strong> of inaccurate or incomplete Personal Information.</li>
+        <li><strong>The right to erasure</strong> ("right to be forgotten") in certain circumstances.</li>
+        <li><strong>The right to restrict processing</strong> in certain circumstances.</li>
+        <li><strong>The right to object to processing</strong>, including for direct marketing purposes.</li>
+        <li><strong>The right to data portability</strong> — to receive your Personal Information in a structured, commonly used, machine-readable format and to transmit it to another controller.</li>
+        <li><strong>The right to withdraw consent</strong> at any time where processing is based on consent.</li>
+        <li><strong>The right not to be subject to solely automated decision-making</strong> that produces legal or similarly significant effects on you, except where permitted by law.</li>
+        <li><strong>The right to lodge a complaint</strong> with the data protection authority in your jurisdiction.</li>
+      </ul>
+      <p>To exercise any of these rights, contact us using the details in Section 14. We will respond within the timeframes prescribed by applicable law (typically 30 days for GDPR/UK GDPR/NDPA, 45 days under CCPA/CPRA — with possible extensions where permitted). We may need to verify your identity before fulfilling your request, and we may decline a request where we are permitted or required to do so by law.</p>
+
+      <h2 id="s7"><span class="num">07</span>Jurisdiction-Specific Disclosures</h2>
+
+      <div class="jurisdiction-block">
+        <h3><span class="tag">EU / UK / EEA</span></h3>
+        <p>If you are located in the European Economic Area (EEA), the United Kingdom, or Switzerland, this section applies to you in addition to the rest of this Policy.</p>
+        <p><strong>Data Controller:</strong> OPXL Limited acts as the data controller for Personal Information collected directly from you. Where we process Personal Information on behalf of a business customer, that business customer is the data controller, and OPXL acts as a processor under Article 28 GDPR.</p>
+        <p><strong>EU Representative:</strong> Where required under Article 27 GDPR, we have appointed an EU Representative. You may contact our Representative via <a href="mailto:eu-rep@op-xl.xyz" class="inline">eu-rep@op-xl.xyz</a>.</p>
+        <p><strong>UK Representative:</strong> Where required under Article 27 UK GDPR, you may contact our UK Representative via <a href="mailto:uk-rep@op-xl.xyz" class="inline">uk-rep@op-xl.xyz</a>.</p>
+        <p><strong>Complaints:</strong> You have the right to lodge a complaint with your local supervisory authority — for example, the Irish Data Protection Commission (<a href="https://dataprotection.ie" target="_blank" rel="noopener noreferrer" class="inline">dataprotection.ie</a>), the UK Information Commissioner's Office (<a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer" class="inline">ico.org.uk</a>), or the supervisory authority in the EU member state where you reside, work, or where an alleged infringement occurred.</p>
+      </div>
+
+      <div class="jurisdiction-block">
+        <h3><span class="tag">United States — California</span></h3>
+        <p>If you are a California resident, the California Consumer Privacy Act (CCPA), as amended by the California Privacy Rights Act (CPRA), gives you additional rights.</p>
+        <p><strong>Categories of Personal Information collected</strong> in the past 12 months: identifiers; commercial information; financial information; internet or other electronic network activity information; geolocation; professional or employment-related information; inferences drawn from the above.</p>
+        <p><strong>Sources, business purposes, and third-party recipients</strong> of this information are described in Sections 1, 2, and 4 of this Policy. These sections also serve as our "Notice at Collection" under California law.</p>
+        <p><strong>We do not sell or share Personal Information</strong> within the meaning of the CCPA/CPRA, including for cross-context behavioural advertising. We do not use or disclose Sensitive Personal Information beyond the purposes permitted by Cal. Civ. Code §1798.121.</p>
+        <p><strong>Your California rights:</strong> right to know, right to delete, right to correct, right to opt out of sale/sharing (not applicable as we do not sell or share), right to limit use and disclosure of Sensitive Personal Information, right of no retaliation.</p>
+        <p>To exercise these rights, contact us at <a href="mailto:privacy@op-xl.xyz" class="inline">privacy@op-xl.xyz</a> with the subject line "California Privacy Request." We will verify your identity before responding. You may also designate an authorised agent.</p>
+      </div>
+
+      <div class="jurisdiction-block">
+        <h3><span class="tag">Nigeria</span></h3>
+        <p>OPXL Limited is a Nigerian company and complies with the <strong>Nigeria Data Protection Act 2023 (NDPA)</strong> and the <strong>Nigeria Data Protection Regulation (NDPR)</strong>. Where we are classified as a Data Controller of Major Importance, we register with and report to the <strong>Nigeria Data Protection Commission (NDPC)</strong>.</p>
+        <p>You may lodge a complaint with the NDPC at <a href="https://ndpc.gov.ng" target="_blank" rel="noopener noreferrer" class="inline">ndpc.gov.ng</a> or No. 5, Tunis Street, Off Aminu Kano Crescent, Wuse 2, Abuja, Nigeria.</p>
+      </div>
+
+      <div class="jurisdiction-block">
+        <h3><span class="tag">Brazil</span></h3>
+        <p>If you are located in Brazil, the Lei Geral de Proteção de Dados (LGPD) applies. You have the rights set out in Section 6 and may lodge a complaint with the Autoridade Nacional de Proteção de Dados (ANPD) at <a href="https://www.gov.br/anpd" target="_blank" rel="noopener noreferrer" class="inline">gov.br/anpd</a>.</p>
+      </div>
+
+      <div class="jurisdiction-block">
+        <h3><span class="tag">South Africa</span></h3>
+        <p>If you are located in South Africa, the Protection of Personal Information Act (POPIA) applies. You may lodge a complaint with the Information Regulator at <a href="https://inforegulator.org.za" target="_blank" rel="noopener noreferrer" class="inline">inforegulator.org.za</a>.</p>
+      </div>
+
+      <div class="jurisdiction-block">
+        <h3><span class="tag">Canada</span></h3>
+        <p>If you are located in Canada, the Personal Information Protection and Electronic Documents Act (PIPEDA) and, where applicable, provincial laws such as Quebec's Law 25 apply. You may lodge a complaint with the Office of the Privacy Commissioner of Canada at <a href="https://www.priv.gc.ca" target="_blank" rel="noopener noreferrer" class="inline">priv.gc.ca</a>.</p>
+      </div>
+
+      <div class="jurisdiction-block">
+        <h3><span class="tag">Australia</span></h3>
+        <p>If you are located in Australia, the Privacy Act 1988 (Cth) and the Australian Privacy Principles apply. You may lodge a complaint with the Office of the Australian Information Commissioner at <a href="https://www.oaic.gov.au" target="_blank" rel="noopener noreferrer" class="inline">oaic.gov.au</a>.</p>
+      </div>
+
+      <div class="jurisdiction-block">
+        <h3><span class="tag">Other Jurisdictions</span></h3>
+        <p>Where you reside in another jurisdiction with applicable data protection law (including but not limited to Kenya's DPA, Ghana's Data Protection Act, India's DPDP Act, Singapore's PDPA, UAE's PDPL), we comply with those laws to the extent they apply to our processing of your Personal Information. Contact us at <a href="mailto:privacy@op-xl.xyz" class="inline">privacy@op-xl.xyz</a> to exercise your rights.</p>
+      </div>
+
+      <h2 id="s8"><span class="num">08</span>How We Store and Protect Your Information</h2>
+      <p>We implement appropriate technical and organisational measures to protect Personal Information against unauthorised or unlawful processing, accidental loss, destruction, or damage. These measures include encryption in transit (TLS) and at rest where appropriate, access controls based on the principle of least privilege, network segmentation, security monitoring, regular vulnerability and penetration testing, employee training, and contractual safeguards with our service providers.</p>
+      <p>Where applicable, we comply with the <strong>Payment Card Industry Data Security Standard (PCI DSS)</strong> for the handling of payment-card information. We pursue industry-recognised security certifications (such as <strong>ISO/IEC 27001</strong> and <strong>SOC 2</strong>) where appropriate to our Services.</p>
+      <p>Despite our safeguards, no method of transmission or storage is 100% secure, and we cannot guarantee absolute security. We will notify you and competent supervisory authorities of any Personal Information breach in accordance with applicable law.</p>
+
+      <h2 id="s9"><span class="num">09</span>How Long We Retain Your Information</h2>
+      <p>We retain Personal Information only for as long as necessary to fulfil the purposes for which it was collected, including for the purposes of satisfying any legal, accounting, regulatory, or reporting requirements. The criteria we use to determine retention periods include:</p>
+      <ul>
+        <li>the duration of our ongoing relationship with you;</li>
+        <li>any legal obligation to retain the data (for example, minimum five (5) to seven (7) years for KYC, financial, and AML records under most jurisdictions in which we operate);</li>
+        <li>statutes of limitation under applicable law;</li>
+        <li>ongoing or potential disputes; and</li>
+        <li>guidance issued by competent regulators.</li>
+      </ul>
+      <p>When Personal Information is no longer required, we securely delete or anonymise it.</p>
+
+      <h2 id="s10"><span class="num">10</span>Cookies and Similar Technologies</h2>
+      <p>We use cookies, pixel tags, web beacons, SDKs, and similar technologies on our websites and applications. Categories include:</p>
+      <ul>
+        <li><strong>Strictly necessary</strong> — required for the operation of our Services (for example, to keep you logged in).</li>
+        <li><strong>Functional</strong> — remember your preferences and personalise your experience.</li>
+        <li><strong>Analytics / performance</strong> — help us understand how our Services are used.</li>
+        <li><strong>Marketing / advertising</strong> — used to deliver relevant advertising and measure its effectiveness, subject to your consent where required by law.</li>
+      </ul>
+      <p>Where required by law (including under the GDPR/ePrivacy Directive), we obtain your consent before placing non-essential cookies. You can manage your cookie preferences via our cookie banner, your browser settings, or by visiting third-party opt-out tools such as <a href="https://www.youronlinechoices.eu" target="_blank" rel="noopener noreferrer" class="inline">youronlinechoices.eu</a> or <a href="https://optout.aboutads.info" target="_blank" rel="noopener noreferrer" class="inline">optout.aboutads.info</a>. We honour "Do Not Track" and Global Privacy Control (GPC) signals where required by law.</p>
+
+      <h2 id="s11"><span class="num">11</span>Children's Privacy</h2>
+      <p>Our Services are not directed to children under the age of 16 (or such higher age as required by applicable law in your jurisdiction — for example, 18 in Nigeria and certain other countries; 13 in the United States under COPPA). We do not knowingly collect Personal Information from children below the applicable age without parental or guardian consent. If we learn that we have collected Personal Information from a child without the required consent, we will delete it as soon as reasonably possible. If you believe we may hold such information, please contact <a href="mailto:privacy@op-xl.xyz" class="inline">privacy@op-xl.xyz</a>.</p>
+
+      <h2 id="s12"><span class="num">12</span>Third-Party Sites and Services</h2>
+      <p>Our Services may contain links to third-party websites, products, or services that we do not control. This Policy does not apply to those third parties. We encourage you to review the privacy policies of any third-party sites or services you visit.</p>
+
+      <h2 id="s13"><span class="num">13</span>Automated Decision-Making and AI</h2>
+      <p>Some of our Services use automated processing, including artificial intelligence and machine learning, to assist with fraud detection, identity verification, credit assessment, content moderation, and personalisation. Where automated decisions produce legal or similarly significant effects on you, we will:</p>
+      <ul>
+        <li>provide meaningful information about the logic involved, where required by law;</li>
+        <li>offer you the right to obtain human review, to express your point of view, and to contest the decision; and</li>
+        <li>only carry out solely automated decisions where permitted by law (for example, where necessary for a contract with you, where authorised by law, or with your explicit consent).</li>
+      </ul>
+
+      <h2 id="s14"><span class="num">14</span>Contact Us</h2>
+      <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our processing of your Personal Information, please contact us:</p>
+      <div class="contact">
+        <strong>Data Protection &amp; Privacy</strong>
+        OPXL Limited<br />
+        Lagos, Nigeria<br />
+        Privacy enquiries: <a href="mailto:privacy@op-xl.xyz" class="inline">privacy@op-xl.xyz</a><br />
+        Data Protection Officer: <a href="mailto:dpo@op-xl.xyz" class="inline">dpo@op-xl.xyz</a><br />
+        Legal: <a href="mailto:legal@op-xl.xyz" class="inline">legal@op-xl.xyz</a><br />
+        General enquiries: <a href="mailto:hello@op-xl.xyz" class="inline">hello@op-xl.xyz</a>
+      </div>
+
+      <p>If you are unsatisfied with our response, you may lodge a complaint with the data protection authority in your jurisdiction (see Section 7 for examples).</p>
+
+      <h2 id="s15"><span class="num">15</span>Changes to This Privacy Policy</h2>
+      <p>We may update this Privacy Policy from time to time to reflect changes in our practices, our Services, applicable law, or for other operational, legal, or regulatory reasons. When we make material changes, we will post the updated Policy on our website with a revised "Last updated" date and, where required by law, provide additional notice (for example, by email) or obtain your consent. We encourage you to review this Policy periodically.</p>
+
+    </article>
+  </main>
+
+  <footer class="site">
+    <div class="footer-inner">
+      <p class="copy">© 2026 OPXL Limited. All rights reserved.</p>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="legal.html">Legal</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
